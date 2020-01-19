@@ -13,8 +13,7 @@ public interface WorkflowService {
     public Workflow createOrUpdate(Workflow workflow);
     public Workflow update(Workflow workflow, Long id);
     public List<Workflow> findAll();
-    public List<Workflow> findAllByEnv(String envSlug);
-    public List<Workflow> findAllWithoutJSONContent();
+    public List<Workflow> findByObjectType(String objectType);
     public Workflow findById(Long id);
     public Workflow delete(Long id);
     public void delete(Workflow workflow);
