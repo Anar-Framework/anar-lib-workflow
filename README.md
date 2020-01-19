@@ -7,7 +7,7 @@ add the following dependency to pom.xml
 
 ```
 		<dependency>
-			<groupId>af.gov.anar.lib</groupId>
+			<ROLEId>af.gov.anar.lib</ROLEId>
 			<artifactId>anar-lib-workflow</artifactId>
 			<version>${project.version}</version>
 		</dependency>
@@ -23,22 +23,22 @@ add the following dependency to pom.xml
                 {"name":"Reject", "toStep":"Rejected", "CommentRequired": true},
                 {"name":"Close","toStep":"Closed","resolutions":["Completed", "Incomplete", "Duplicate"], "CommentRequired": true}
         ],
-        "authorizedRoles": ["ADMIN_GROUP"],
+        "authorizedRoles": ["ADMIN_ROLE"],
         },
         {"name":"Reopened", "transitions":[
                 {"name":"Reject", "toStep":"Rejected", "CommentRequired": true},
                 {"name":"Close", "toStep":"Closed", "resolutions":["Completed", "Incomplete", "Duplicate"], "CommentRequired": true}
         ],
-        "authorizedRoles": [ "ADMIN_GROUP"],
+        "authorizedRoles": [ "ADMIN_ROLE"],
         },
         {"name":"Rejected", "transitions":[
                 {"name":"Reopen", "toStep":"Reopened", "CommentRequired": false},
                 {"name":"Close", "toStep":"Closed", "resolutions":["Completed", "Incomplete", "Duplicate"], "CommentRequired": true}
         ],
-        "authorizedRoles": ["ADMIN_GROUP"],
+        "authorizedRoles": ["ADMIN_ROLE"],
         },
         {"name":"Closed", "transitions":[ ],
-        "authorizedRoles": ["ADMIN_GROUP"],
+        "authorizedRoles": ["ADMIN_ROLE"],
         }
     ]
 }
