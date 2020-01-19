@@ -13,6 +13,36 @@ add the following dependency to pom.xml
 		</dependency>
 ```
 
+### Sample Workflow 
+
+```json
+
+{
+   "steps":[
+        {"name":"Open", "transitions":[
+                {"name":"Reject", "toStep":"Rejected", "CommentRequired": true},
+                {"name":"Close","toStep":"Closed","resolutions":["Completed", "Incomplete", "Duplicate"], "CommentRequired": true}
+        ],
+        "authorizedRoles": ["ADMIN_GROUP"],
+        },
+        {"name":"Reopened", "transitions":[
+                {"name":"Reject", "toStep":"Rejected", "CommentRequired": true},
+                {"name":"Close", "toStep":"Closed", "resolutions":["Completed", "Incomplete", "Duplicate"], "CommentRequired": true}
+        ],
+        "authorizedRoles": [ "ADMIN_GROUP"],
+        },
+        {"name":"Rejected", "transitions":[
+                {"name":"Reopen", "toStep":"Reopened", "CommentRequired": false},
+                {"name":"Close", "toStep":"Closed", "resolutions":["Completed", "Incomplete", "Duplicate"], "CommentRequired": true}
+        ],
+        "authorizedRoles": ["ADMIN_GROUP"],
+        },
+        {"name":"Closed", "transitions":[ ],
+        "authorizedRoles": ["ADMIN_GROUP"],
+        }
+    ]
+}
+```
 #### Documentation
 
 Refer to this repository **Wiki** section.
