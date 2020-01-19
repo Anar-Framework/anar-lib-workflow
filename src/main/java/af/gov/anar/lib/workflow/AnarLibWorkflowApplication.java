@@ -1,4 +1,4 @@
-package af.gov.anar.lib.anarlibworkflow;
+package af.gov.anar.lib.workflow;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
