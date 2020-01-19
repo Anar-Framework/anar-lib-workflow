@@ -40,8 +40,8 @@ public class Workflow implements Serializable {
     /**
      * Specify type of object type that works based on this workflow.
      */
-    @Column(name = "type")
-    private String type;
+    @Column(name = "object_type")
+    private String objectType;
 
     @Column(name = "description")
     private String description;
