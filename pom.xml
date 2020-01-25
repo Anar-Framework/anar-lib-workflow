@@ -19,6 +19,20 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>af.gov.anar.lib</groupId>
+			<artifactId>anar-lib-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>af.gov.anar.lib</groupId>
+			<artifactId>anar-lib-json</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
