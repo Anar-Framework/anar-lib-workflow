@@ -43,6 +43,19 @@ add the following dependency to pom.xml
     ]
 }
 ```
+
+
+#### Features
+
+- Manage workflow in a RDBMS database
+- Flexible and easy JSON based workflow
+- Configurable Steps 
+- Transition Support
+- Comment required support
+- Authority and access management 
+- Resolutions Support
+- Workflow Parser 
+
 #### Documentation
 
 Refer to this repository **Wiki** section.
