@@ -1,7 +1,6 @@
 package af.gov.anar.lib.anarlibworkflow;
 
 
-import af.gov.anar.lib.workflow.AnarLibWorkflowApplication;
 import af.gov.anar.lib.workflow.model.Workflow;
 import af.gov.anar.lib.workflow.parser.WorkflowParser;
 import af.gov.anar.lib.workflow.repository.WorkflowRepository;
@@ -21,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AnarLibWorkflowApplication.class)
+@SpringBootTest
 public class WorkflowTest {
 
 
